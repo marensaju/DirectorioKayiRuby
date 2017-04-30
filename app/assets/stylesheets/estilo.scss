@@ -51,15 +51,12 @@ body,
 .porcentaje::after,
 .porcentaje i::after {
   background-color: rgb(0, 51, 102);
-  /*AZUL-OSCURO*/
- /* background-image: url('http://g3k.co/g3k/img/ui/color-azul-oscuro.png');*/
 }
 
 .fondo2,
 .encabezado,
 .articulos {
   background-color: #A64545;
-  /*background-color: rgb(0, 92, 175);*/
 }
 
 
@@ -137,8 +134,7 @@ label.boton:hover::after {
 
 .fondo8 {
   background-color: rgb(240, 240, 240);
-  /*GRIS-CLARO*/
-  /*background-image: url('http://g3k.co/g3k/img/ui/color-gris-claro.png');*/
+  
 }
 
 .fondo9 {
@@ -683,7 +679,6 @@ label.boton.skew-der::before {
   content: '';
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
- /* background-image: url('http://g3k.co/g3k/img/ui/linea-horizontal-f-blanco.png');*/
   width: 100%;
   height: 2rem;
   transition: all ease .3s;
@@ -1077,8 +1072,7 @@ SECCIÓN $HEADER
   top: 0;
   background-position: top left, top right;
   background-size: 50% 100%;
- /* background-image: url('http://g3k.co/g3k/img/ui/iceberg-arriba-izq.png'), url('http://g3k.co/g3k/img/ui/iceberg-arriba-der.png');
-*/
+ 
 }
 
 .encabezado::after {
@@ -1086,9 +1080,7 @@ SECCIÓN $HEADER
   bottom: 0;
   background-position: bottom left, 120% 100%;
   background-size: 60% 100%, 60% 70%;
-  /*
-  background-image: url('http://g3k.co/g3k/img/ui/iceberg-abajo-izq.png'), url('http://g3k.co/g3k/img/ui/iceberg-abajo-der.png');
-  */z-index: 15;
+  z-index: 15;
 }
 
 
@@ -1357,7 +1349,6 @@ HEADER TITULOS E ILUSTRACION
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
- /* background-image: url('http://g3k.co/g3k/img/svg/gradius.svg');*/
 }
 
 
@@ -1429,8 +1420,7 @@ $SECCION $FILOSOFIA
   -webkit-background-size: 50% 70%, 100% 100%, 0% 0%;
   background-size: 50% 70%, 100% 100%, 0% 0%;
  /*Aqui va la forma  como monta;as de la seccion de inicio o informacion de como funciona*/
- /* background-image: url('http://g3k.co/g3k/img/ui/short-montain.png'), url('http://g3k.co/g3k/img/ui/middle-montain-der.png'), url('http://g3k.co/g3k/img/ui/long-montain-azul.png');
-  */transition: all ease .5s;
+  transition: all ease .5s;
 }
 
 .seccion.filosofia .titulo.tipo3::before,
@@ -1660,39 +1650,39 @@ $SECCION $PORTAFOLIO
 /*$IMAGENES RESPONSIVE DE LA GALERIA*/
 
 .galeria[data-tipo*="diseño"] .portada:nth-child(1) .link {
-  background-image: url('http://g3k.co/g3k/img/work/wallpaper.png')
+  background-image: url('http://g3k.co/g3k/img/work/wallpaper.png');
 }
 
 .galeria[data-tipo*="diseño"] .portada:nth-child(2) .link {
-  background-image: url('http://g3k.co/g3k/img/work/heippi-cover.jpg')
+  background-image: url('http://g3k.co/g3k/img/work/heippi-cover.jpg');
 }
 
 .galeria[data-tipo*="diseño"] .portada:nth-child(3) .link {
-  background-image: url('http://g3k.co/g3k/img/work/bayumi-cover.jpg')
+  background-image: url('http://g3k.co/g3k/img/work/bayumi-cover.jpg');
 }
 
 .galeria[data-tipo*="codigo"] .portada:nth-child(1) .link {
-  background-image: url('http://g3k.co/g3k/img/work/cambio-color.png')
+  background-image: url('http://g3k.co/g3k/img/work/cambio-color.png');
 }
 
 .galeria[data-tipo*="codigo"] .portada:nth-child(2) .link {
-  background-image: url('http://g3k.co/g3k/img/work/tree-menu.jpg')
+  background-image: url('http://g3k.co/g3k/img/work/tree-menu.jpg');
 }
 
 .galeria[data-tipo*="codigo"] .portada:nth-child(3) .link {
-  background-image: url('http://g3k.co/g3k/img/work/animacion-css.jpg')
+  background-image: url('http://g3k.co/g3k/img/work/animacion-css.jpg');
 }
 
 .galeria[data-tipo*="variados"] .portada:nth-child(1) .link {
-  background-image: url('http://g3k.co/g3k/img/work/cover-animaciones.jpg')
+  background-image: url('http://g3k.co/g3k/img/work/cover-animaciones.jpg');
 }
 
 .galeria[data-tipo*="variados"] .portada:nth-child(2) .link {
-  background-image: url('http://g3k.co/g3k/img/work/cover-ilustraciones.jpg')
+  background-image: url('http://g3k.co/g3k/img/work/cover-ilustraciones.jpg');
 }
 
 .galeria[data-tipo*="variados"] .portada:nth-child(3) .link {
-  background-image: url('http://g3k.co/g3k/img/work/cover-logo.jpg')
+  background-image: url('http://g3k.co/g3k/img/work/cover-logo.jpg');
 }
 
 
@@ -1720,10 +1710,6 @@ $SECCION $PORTAFOLIO
   font-weight: normal;
   font-size: 2rem;
   color: rgb(32, 178, 170);
-  /*background-size: 50% auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url('http://g3k.co/g3k/img/svg/icono/icono-contacto.svg');*/
   text-align: center;
   width: 2.5rem;
   height: 2.5rem;
