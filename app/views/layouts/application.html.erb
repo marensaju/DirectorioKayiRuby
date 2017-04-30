@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kayi</title>
+
+   
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+
+
+<!--estilo index-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700' rel='stylesheet' type='text/css'>
+<link href='http://g3k.co/font/mix-rawen-g3k/g3k.css' rel='stylesheet' type='text/css'>
+<!--fin estilo index-->
+
+
+</head>
+<body>
+
+<!--Inicio barra de menu-->
+<input class="ctrl menu" type="checkbox" id="ctrl-menu" />
+<input class="ctrl config" type="checkbox" id="ctrl-config" />
+<!--$SETTINGS-->
+<input class="ctrl" type="radio" name="letra" id="ctrl-lang" />
+<input class="ctrl" type="radio" name="letra" id="ctrl-letra-1" />
+<input class="ctrl" type="radio" name="letra" id="ctrl-letra-2" />
+<input class="ctrl" type="radio" name="letra" id="ctrl-letra-3" />
+
+<input class="ctrl" type="radio" name="resolucion" id="ctrl-monitor" />
+<input class="ctrl" type="radio" name="resolucion" id="ctrl-laptop" />
+<input class="ctrl" type="radio" name="resolucion" id="ctrl-pad-h" />
+<input class="ctrl" type="radio" name="resolucion" id="ctrl-pad-v" />
+<input class="ctrl" type="radio" name="resolucion" id="ctrl-phone-h" />
+<input class="ctrl" type="radio" name="resolucion" id="ctrl-phone-v" />
+
+<div class="contenedor" id="inicio">
+  <!--$NAV-->
+  <nav class="navegacion">
+
+    <label class="etiqueta btn menu" for="ctrl-menu"><b class="icono">menu</b></label>
+    <label class="etiqueta btn config" for="ctrl-config"><b class="icono">Configurar</b></label>
+
+    <ul class="menu lista">
+      <li class="item filosofia">
+        <a class="link icono" href="#filosofia">Inicio</a>
+      </li>
+      <li class="item portafolio">
+        <a class="link icono" href="#portafolio">Directorio</a>
+      </li>
+      <li class="item inicio">
+      
+        <a class="link icono" href="#inicio" title="inicio"><b>Kayi</b></a>
+      </li>
+      <li class="item habilidades">
+        <a class="link icono" href="#habilidades">Ingresa</a>
+      </li>
+      <li class="item contacto">
+        <a class="link icono" href="#contacto">Contactanos</a>
+      </li>
+    </ul>
+
+  </nav>
+<!--Fin de barrar para menu-->
+<%= yield %>
+
+</body>
+</html>
