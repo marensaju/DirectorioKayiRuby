@@ -21,7 +21,6 @@
 
 </head>
 <body>
-
 <!--Inicio barra de menu-->
 <input class="ctrl menu" type="checkbox" id="ctrl-menu" />
 <input class="ctrl config" type="checkbox" id="ctrl-config" />
@@ -47,14 +46,14 @@
 
     <ul class="menu lista">
       <li class="item filosofia">
-        <a class="link icono" href="#filosofia">Inicio</a>
+        <a class="link icono" href="<%=  welcome_index_path %>">Inicio</a>
       </li>
       <li class="item portafolio">
-        <a class="link icono" href="#portafolio">Directorio</a>
+        <a class="link icono" href="<%=  emprendimientos_path %>">Directorio</a>
       </li>
       <li class="item inicio">
       
-        <a class="link icono" href="#inicio" title="inicio"><b>Kayi</b></a>
+        <a class="link icono" href="<%=  welcome_index_path %>" title="inicio"><b>Kayi</b></a>
       </li>
       <li class="item habilidades">
         <a class="link icono" href="#habilidades">Ingresa</a>
@@ -67,6 +66,21 @@
   </nav>
 <!--Fin de barrar para menu-->
 <%= yield %>
+<footer class="pie-pagina">
+
+    <div>
+    <!--contenedor-->
+
+    <section >
+      <div class="grupo">
+       <a class="etiqueta" for="ctrl-letra-3" href="#">© 2017 Kayi.</a>
+        
+      </div>
+    </section>
+
+
+  </footer>
+
 
 </body>
 </html>

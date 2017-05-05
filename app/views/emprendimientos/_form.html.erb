@@ -1,0 +1,310 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://use.fontawesome.com/135bfc18e0.js"></script>
+
+
+<%= stylesheet_link_tag "Spacelab" %>
+
+<%= form_for(@emprendimiento) do |f|  %>
+ 
+
+<div class="container">
+ <% if @emprendimiento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@emprendimiento.errors.count, "error") %> prohibited this emprendimiento from being saved:</h2>
+
+      <ul>
+      <% @emprendimiento.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="row">
+
+<div class="form-horizontal">
+   <fieldset>
+    <legend>Datos Generales</legend>
+  <div class="col-md-6">
+  <div class="form-group">
+      <div class="field">
+        <%= f.label :titulo,"Título", :class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_field :titulo, :class=>"form-control" ,:placeholder=>"Nombre de emprendimiento"%>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="field">
+        <%= f.label :descripcion,"Descripción", :class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_area :descripcion, :class=>"form-control",:placeholder=>"Descripción de emprendimiento"%>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="field">
+        <%= f.label :etiquetas,"Etiquetas", :class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_area :etiquetas, :class=>"form-control" ,:placeholder=>"Agregar etiquetas o palabras clave"%>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+
+<div class="form-group">
+      <div class="field">
+        <%= f.label :correo, "Correo Electronico", :class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_field :correo, :class=>"form-control" ,:placeholder=>"Dirección de correo Electronico"%>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="field">
+        <%= f.label :pweb, "Página web", :class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_field :pweb, :class=>"form-control",:placeholder=>"Url página web" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="field">
+        <%= f.label :direccion,"Dirección", :class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_field :direccion, :class=>"form-control" ,:placeholder=>"Dirección o lugar"%>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="field">
+        <%= f.label :ihoraio, "Horario Inicio" ,:class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_field :ihoraio, :class=>"form-control",:placeholder=>"Hora inicio de atención" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="field">
+        <%= f.label :fhorario, "Horario Fin", :class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_field :fhorario, :class=>"form-control" ,:placeholder=>"Hora fin de atención"%>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="field">
+        <%= f.label :telefono, "Teléfono",:class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_field :telefono, :class=>"form-control",:placeholder=>"Número de teléfono" %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </fieldset>
+ <!--fin de form--> 
+</div>
+</div>
+
+
+
+
+
+
+    
+
+
+  
+ 
+
+
+
+ 
+
+
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-horizontal">
+   <fieldset>
+    <legend>Redes Sociales</legend>
+
+<div class="form-group">
+      <div class="field">
+        <%= f.label :pface, "Facebook",:class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_field :pface, :class=>"form-control",:placeholder=>"Url facebook" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="field">
+        <%= f.label :ptwitter, "Twitter",:class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_field :ptwitter, :class=>"form-control" ,:placeholder=>"Url twitter" %>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="field">
+        <%= f.label :pinstagram,"Instagram", :class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_field :pinstagram, :class=>"form-control" ,:placeholder=>"Url instagram" %>
+        </div>
+      </div>
+    </div>
+<div class="form-group">
+      <div class="field">
+        <%= f.label :pbehance," Behance", :class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_field :pbehance, :class=>"form-control",:placeholder=>"Url behance"  %>
+        </div>
+      </div>
+    </div>
+
+<div class="form-group">
+      <div class="field">
+        <%= f.label :pyoutube, "Youtube",:class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_field :pyoutube, :class=>"form-control",:placeholder=>"Url canal de youtube"  %>
+        </div>
+      </div>
+    </div>
+ 
+  <div class="form-group">
+      <div class="field">
+        <%= f.label :plinkedin, "Linkedin",:class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_field :plinkedin, :class=>"form-control" ,:placeholder=>"Url linkedin" %>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+</fieldset>
+</div>
+
+
+  </div>
+  <div class="col-md-6">
+    <div class="form-horizontal">
+   <fieldset>
+    <legend>Multimedia</legend>
+
+
+    <div class="form-group">
+      <div class="field">
+        <%= f.label :lvideo, "Link Video",:class=>"col-lg-2 control-label" %><br>
+        <div class="col-lg-10">
+        <%= f.text_field :lvideo, :class=>"form-control" ,:placeholder=>"Url video promocional" %><br>
+        </div>
+      </div>
+    </div>
+
+
+
+
+<div class="row form-group ">
+<div class="field">
+<div class=" col-lg-2 ">
+ <%= f.label :portada, "Imagen de portada",:class=>" control-label" %>
+</div>
+<div class="col-lg-10" >
+ <%= f.file_field :portada %><br>
+</div>
+</div>
+</div>
+
+<div class="row form-group ">
+<div class=" col-lg-2">
+  <%= f.label :logo,"Imagen logotipo",:class=>" control-label" %>
+</div>
+<div class="col-lg-10" >
+  <%= f.file_field :logo %><br>
+</div>
+</div>
+
+<div class="row form-group">
+<div class=" col-lg-2">
+   <%= f.label :Producto1,"Imagen producto servicio",:class=>" control-label"%>
+</div>
+<div class="col-lg-10" >
+  <%= f.file_field :producto1 %><br>
+</div>
+</div>
+
+
+
+ 
+  
+
+  
+
+ 
+
+
+
+
+</fieldset>
+</div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--fin de container-->
+</div>
+  
+<div class="row"> 
+<div class="col-md-6" >
+   
+</div>
+<div class="col-md-6" >
+   <div class="actions">
+<%= submit_tag 'Regresar', :type=>"button",:onclick => "location.href = '#{emprendimientos_path()}'" ,:class=>"btn btn-warning" %>
+    <%= f.submit "Guardar",:class=>"btn btn-success" %>
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+    
+
+
+<% end %>

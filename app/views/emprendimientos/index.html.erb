@@ -1,0 +1,69 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+<p id="notice"><%= notice %></p>
+
+
+<section class="seccion portafolio fondo8" style="padding-top: 45px;" id="portafolio">
+      <header class="titulos">
+        <h3 class="titulo tipo3">
+      <span class="lang es">Directorio</span>
+     
+    </h3>
+        <h4 class="titulo tipo4">
+      <span class="lang es">Emprendimientos</span>
+     
+    </h4>
+      </header>
+
+
+<% @emprendimientos.each do |emprendimiento| %>
+
+<div class="col-md-6">
+<div  data-tipo="diseño">
+
+        <figure class="marco portada hijo principal" >
+          <a class="link"  title="ir al proyecto" target="_blank" style="background-color: white;">
+           <%= image_tag (emprendimiento.logo.url(:thumb)), :class=>"img-responsive"%>
+            <p class="descripcion">
+              
+              <%= emprendimiento.descripcion %>
+            </p>
+           
+          </a>
+          <figcaption class="texto">
+
+          <%= emprendimiento.titulo %>
+           
+           <br>
+           <%= link_to 'Conocer', emprendimiento %>
+       <%= link_to 'Editar', edit_emprendimiento_path(emprendimiento) %>
+        <%= link_to 'Eliminar', emprendimiento, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </figcaption>
+        </figure>
+    
+      </div>
+  
+</div>
+
+
+
+
+
+  
+
+
+       <% end %>
+
+    </section>
+    <!--fin directorio-->
+
+    <br>
+
+<%= link_to 'New Emprendimiento', new_emprendimiento_path %>

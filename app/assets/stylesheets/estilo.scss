@@ -94,7 +94,8 @@ a.btn::after,
 label.boton,
 label.boton::before,
 label.boton::after {
-  background-color: rgb(26, 164, 201);
+
+ /* background-color: rgb(26, 164, 201);*/
 }
 
 
@@ -138,7 +139,7 @@ label.boton:hover::after {
 }
 
 .fondo9 {
-  background-color: rgb(250, 250, 250);
+  /*background-color: rgb(250, 250, 250);*/
 }
 
 
@@ -547,101 +548,6 @@ u {
 }
 
 
-/*ENLACES*/
-
-a.btn,
-a.btn::after,
-a.btn::before,
-label.boton,
-label.boton::after,
-label.boton::before {
-  border: transparent 0 solid;
-  border-bottom: rgb(0, 51, 102) 0.2rem solid;
-  -webkit-box-sizing: initial;
-  -moz-box-sizing: initial;
-  box-sizing: initial;
-  transition: all ease .5s;
-}
-
-a.btn,
-label.boton {
-  color: white;
-  margin: 0% 2rem;
-  min-width: 4rem;
-  padding: 0.75rem 1.2rem;
-  text-decoration: none;
-  position: relative;
-  text-transform: uppercase;
-  z-index: 30;
-}
-
-.btn.ancho {
-  min-width: 6rem;
-}
-
-a.btn::after,
-a.btn::before,
-label.boton::after,
-label.boton::before {
-  content: '';
-  width: 30%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-
-a.btn::before,
-label.boton::before {
-  right: 85%;
-  -webkit-transform: skewX(-30deg);
-  -ms-transform: skewX(-30deg);
-  transform: skewX(-30deg);
-}
-
-a.btn::after,
-label.boton::after {
-  left: 85%;
-  -webkit-transform: skewX(30deg);
-  -ms-transform: skewX(30deg);
-  transform: skewX(30deg);
-}
-
-a.btn:hover,
-label.boton:hover {
-  -webkit-transform: translateY(-0.15rem);
-  -ms-transform: translateY(-0.15rem);
-  transform: translateY(-0.15rem);
-}
-
-a.btn:hover,
-a.btn:hover::after,
-a.btn:hover::before,
-label.boton:hover,
-label.boton:hover::after,
-label.boton:hover::before {
-  border-bottom: rgb(0, 51, 102) 0.35rem solid;
-}
-
-.codepen .icono::after {
-  content: 'c';
-}
-
-a.btn.skew-der::before,
-label.boton.skew-der::before {
-  -webkit-transform: skewX(30deg);
-  -ms-transform: skewX(30deg);
-  transform: skewX(30deg);
-}
-
-.btn,
-.boton {
-  cursor: pointer;
-}
-
-.icono {
-  display: inline-block
-}
 
 
 /*CLASES PARA TODAS LAS SECCIONES*/
@@ -993,6 +899,7 @@ $MENU
   padding: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.04rem;
+  color:White;
 }
 
 .navegacion .item:hover .link {
@@ -1645,44 +1552,6 @@ $SECCION $PORTAFOLIO
   transform: translateY(0%);
 }
 
-
-/*$IMAGENES RESPONSIVE DE LA GALERIA*/
-
-.galeria[data-tipo*="diseño"] .portada:nth-child(1) .link {
-  background-image: url('http://g3k.co/g3k/img/work/wallpaper.png');
-}
-
-.galeria[data-tipo*="diseño"] .portada:nth-child(2) .link {
-  background-image: url('http://g3k.co/g3k/img/work/heippi-cover.jpg');
-}
-
-.galeria[data-tipo*="diseño"] .portada:nth-child(3) .link {
-  background-image: url('http://g3k.co/g3k/img/work/bayumi-cover.jpg');
-}
-
-.galeria[data-tipo*="codigo"] .portada:nth-child(1) .link {
-  background-image: url('http://g3k.co/g3k/img/work/cambio-color.png');
-}
-
-.galeria[data-tipo*="codigo"] .portada:nth-child(2) .link {
-  background-image: url('http://g3k.co/g3k/img/work/tree-menu.jpg');
-}
-
-.galeria[data-tipo*="codigo"] .portada:nth-child(3) .link {
-  background-image: url('http://g3k.co/g3k/img/work/animacion-css.jpg');
-}
-
-.galeria[data-tipo*="variados"] .portada:nth-child(1) .link {
-  background-image: url('http://g3k.co/g3k/img/work/cover-animaciones.jpg');
-}
-
-.galeria[data-tipo*="variados"] .portada:nth-child(2) .link {
-  background-image: url('http://g3k.co/g3k/img/work/cover-ilustraciones.jpg');
-}
-
-.galeria[data-tipo*="variados"] .portada:nth-child(3) .link {
-  background-image: url('http://g3k.co/g3k/img/work/cover-logo.jpg');
-}
 
 
 /*GALERIA TEXTO*/
